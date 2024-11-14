@@ -1,9 +1,9 @@
 # Chemistry
 PGDip Data Science in Chemistry
-Wine Classification with Machine Learning
+Solubility Prediction
 
 Project Overview
-This project involves applying machine learning techniques to the Wine dataset to classify wines into their respective classes based on their chemical properties. The dataset contains 178 samples of wine, each belonging to one of three classes. The project explores data preprocessing, model selection, model evaluation, and interpretation of results using various machine learning models.
+This assignment uses SMILES string embeddings and molecular descriptors to predict the aqueous solubility (LogS) of chemical compounds. The chemical descriptors in the model are computed using RDKit and the RandomForestRegressor from scikit-learn.
 
 Instructions for Running the Project
 
@@ -18,22 +18,26 @@ Open Google Colaboratory:
 Open Google Colaboratory in your web browser.
 
 Upload the ipynb file:
-Upload the ipynb file (Wine_Classification.ipynb) to your Google Collab session.
+Upload the ipynb file (Assignment2Chem.ipynb) to your Google Collab session.
 
 2. Uploading the Dataset
-Upload the Wine.csv File:
+Upload the solubility.csv File:
 
-The dataset used in this project is stored in the submission folder and is called Wine.csv. To upload this file to your Colaboratory session:
+The dataset used in this project is stored in the submission folder and is called solubility.csv. To upload this file to your Colaboratory session:
 Click on the "Files" tab on the left-hand side of the Colaboratory interface.
-Click on the "Upload" button and select the Wine.csv file from your local machine.
+Click on the "Upload" button and select the solubility.csv file from your local machine.
 
 3. Running the Code
+
+Before running the notebook, ensure that you have the following Python packages installed:
+pip install rdkit-pypi deepchem dgl
+
 Run the Notebook:
 
 Once the dataset is uploaded, run each cell in the notebook sequentially. The notebook includes code for data exploration, preprocessing, model training, evaluation, and visualization.
 Analyze the Results:
 
-Review the output, including metrics, confusion matrices, ROC curves, and feature importance analyses.
+Review the output, including metrics, Mean Squared Error, Root Mean Squared Error,R-Squared and feature importance analyses.
 
 Dependencies
 The project uses the following Python libraries:
@@ -42,7 +46,10 @@ pandas
 numpy
 scikit-learn
 matplotlib
-seaborn
+rdkit
+deepchem
+dgl
+
 
 These libraries are available in Google Colaboratory by default. If you are running the notebook on a different platform, ensure these dependencies are installed. You can install them using the following commands:
 
@@ -50,6 +57,4 @@ pip install pandas==2.0.3 numpy==1.24.3 scikit-learn==1.3.0 matplotlib==3.7.1 se
 
 _________________________________________________
 
-pip install nltk
-pip install rdkit-pypi deepchem dgl
-pip install gensim
+

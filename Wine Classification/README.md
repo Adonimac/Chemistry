@@ -48,8 +48,3 @@ These libraries are available in Google Colaboratory by default. If you are runn
 
 pip install pandas==2.0.3 numpy==1.24.3 scikit-learn==1.3.0 matplotlib==3.7.1 seaborn==0.12.2
 
-_________________________________________________
-
-pip install nltk
-pip install rdkit-pypi deepchem dgl
-pip install gensim
